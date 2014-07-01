@@ -115,7 +115,7 @@ pidfile = st3simple/pid/st3_l3simple_slave.pid
 Initialize node in target database:
 
 ----
-londiste3 st3simple/st3_l3simple_slave.ini create-leaf node2 dbname=l3simple_slave --provider="dbname=l3simple host=127.0.0.1"
+londiste3 st3simple/st3_l3simple_slave.ini create-leaf node2 dbname=l3simple_slave --provider="dbname=l3simple_primary host=127.0.0.1"
 ----
 
 Launch worker daemon for target database:
